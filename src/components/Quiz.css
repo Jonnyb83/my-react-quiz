@@ -1,0 +1,64 @@
+/* Quiz.css */
+
+.quiz-section {
+    width: auto;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* background: linear-gradient(90deg, rgba(3,19,84,1) 0%, rgba(4,137,150,1) 44%, rgba(11,5,166,1) 100%); */
+    color: white;
+}
+
+.quiz-card {
+    background: radial-gradient(circle, rgba(3,19,84,1) 0%, rgba(4,137,150,1) 44%, rgba(11,5,166,1) 100%);
+    border-color: #0d7503; /* Blue-green border color */
+}
+
+.question-header {
+    color: #a3d9ff; /* Light blue for text */
+}
+
+.progress-text {
+    color: #021658; /* Bright green */
+    width: 100px;
+    text-align: right;
+}
+
+.option-button {
+    width: 100%;
+    text-align: start;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    border-radius: 0.375rem;
+    background-color: #020e36; /* Darker blue for button */
+    color: white;
+    border: none;
+    z-index: 1;
+}
+
+.option-button:hover {
+    background-color: #0ca10c41; /* Blue-green on hover */
+    z-index: -2;
+}
+
+.option-button.bg-success {
+    background-color: #60d600; /* Green for correct answer */
+}
+
+.next-button,
+.result-button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem 0;
+    font-weight: bold;
+    border: none;
+    background-color: #1c5d99; /* Blue button */
+    color: white;
+}
+
+.next-button:hover,
+.result-button:hover {
+    background-color: #09024b; /* Lighter blue on hover */
+    color: antiquewhite;
+}

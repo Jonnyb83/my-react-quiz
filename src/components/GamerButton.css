@@ -1,0 +1,46 @@
+/* GamerButton.css */
+
+.gamer-button {
+    width: 50px;
+    height: 50px;
+    background-color: #000; /* Black background */
+    color: #0f0; /* Bright green text */
+    border: 2px solid #0f0; /* Bright green border */
+    border-radius: 50%; /* Circular button */
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+
+.gamer-button:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(0, 255, 0, 0.2); /* Translucent green */
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.gamer-button:hover {
+    color: #000; /* Black text on hover */
+    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0; /* Glowing effect */
+}
+
+.gamer-button:hover:before {
+    opacity: 1;
+    transform: rotate(45deg); /* Rotate the translucent green layer */
+}
+
+.gamer-button:active {
+    background-color: #0f0; /* Green background on click */
+    color: #000; /* Black text on click */
+    box-shadow: 0 0 5px #0f0, 0 0 10px #0f0; /* Slightly dim the glow */
+}
